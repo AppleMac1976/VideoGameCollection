@@ -16,10 +16,10 @@ struct ContentView: View {
     var body: some View {
         TabView{
             CollectionView()
-            .tabItem{
-                Image(systemName: "house")
-                Text("Home")
-            }
+                .tabItem{
+                    Image(systemName: "house")
+                    Text("Home")
+                }
             NavigationView{
                 AddGameView()
                 GameDetailsView(id: UserDefaults.standard.integer(forKey: "lastViewedGame"))

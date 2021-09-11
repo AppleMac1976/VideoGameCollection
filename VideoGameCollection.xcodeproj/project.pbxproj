@@ -14,6 +14,7 @@
 		6B224304269BE1A000937B15 /* GameResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B224303269BE1A000937B15 /* GameResultRow.swift */; };
 		6B23A90E26AE214C00C669A8 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B23A90D26AE214C00C669A8 /* Scanner.swift */; };
 		6B54184526C64F3900F3C900 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54184426C64F3900F3C900 /* Store.swift */; };
+		6B8E8A1B26ED4EBB00B5FECD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8E8A1A26ED4EBB00B5FECD /* HomeView.swift */; };
 		6B9262DF26ADB305005284D9 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9262DE26ADB305005284D9 /* CollectionView.swift */; };
 		6B9262E126ADD265005284D9 /* GameCollectionGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9262E026ADD265005284D9 /* GameCollectionGrid.swift */; };
 		6B9262E426ADE0C0005284D9 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B9262E326ADE0C0005284D9 /* HexColor.swift */; };
@@ -63,6 +64,7 @@
 		6B224303269BE1A000937B15 /* GameResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultRow.swift; sourceTree = "<group>"; };
 		6B23A90D26AE214C00C669A8 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		6B54184426C64F3900F3C900 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		6B8E8A1A26ED4EBB00B5FECD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6B9262DE26ADB305005284D9 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		6B9262E026ADD265005284D9 /* GameCollectionGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionGrid.swift; sourceTree = "<group>"; };
 		6B9262E326ADE0C0005284D9 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				6B0F8BFE26B1FCD600FF0B4E /* MainHelpView.swift */,
 				6B0F8C0026B1FD9F00FF0B4E /* AboutView.swift */,
 				6BA3233126B32C2F0034C910 /* PlatformListView.swift */,
+				6B8E8A1A26ED4EBB00B5FECD /* HomeView.swift */,
 			);
 			path = "SwiftUI Views";
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				6BF4415B26C766130099979C /* ImageGallery.swift in Sources */,
 				6B54184526C64F3900F3C900 /* Store.swift in Sources */,
 				6BA91B9E26A49F12002148E3 /* LoadingIndicator.swift in Sources */,
+				6B8E8A1B26ED4EBB00B5FECD /* HomeView.swift in Sources */,
 				6B9262DF26ADB305005284D9 /* CollectionView.swift in Sources */,
 				6BA3233226B32C2F0034C910 /* PlatformListView.swift in Sources */,
 				6B23A90E26AE214C00C669A8 /* Scanner.swift in Sources */,
