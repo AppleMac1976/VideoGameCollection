@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct CategoryCellView: View {
+    let categoryName: String
+    let icon: Image
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Text(categoryName)
+                .font(.system(size: 30))
+                .padding()
+            icon
+                .font(.system(size: 50))
+        }
+        .padding()
+        .border(.black, width: 4)
+        .shadow(radius: 5)
     }
 }
 
 struct CategoryCellView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryCellView()
+        CategoryCellView(categoryName: "Games", icon: Image(systemName: "gamecontroller"))
     }
 }
