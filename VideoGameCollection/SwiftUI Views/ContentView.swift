@@ -15,20 +15,20 @@ struct ContentView: View {
     //SwiftUI body
     var body: some View {
         TabView{
-            CollectionView()
+            HomeView()
                 .tabItem{
                     Image(systemName: "house")
                     Text("Home")
                 }
             NavigationView{
-                AddGameView()
+                AddItemView()
                 GameDetailsView(id: UserDefaults.standard.integer(forKey: "lastViewedGame"))
             }
             .tabItem{
                 Image(systemName: "plus")
                 Text("Add")
             }
-            SettingsView()
+            AddCategoryView()
                 .tabItem{
                     Image(systemName: "gearshape")
                     Text("Settings")

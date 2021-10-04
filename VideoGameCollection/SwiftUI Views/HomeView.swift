@@ -9,8 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        TabView{
-            
+        VStack{
+            Text("HomeView")
         }
     }
 }
