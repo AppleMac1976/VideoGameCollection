@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject var collection: VideoGameCollection
     var body: some View {
         VStack{
-            Text("HomeView")
+            ForEach(collection.collection){ uniqueCategory in
+                CategoryCellView(categoryName: uniqueCategory.name, icon: uniqueCategory.icon)
+            }
         }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView().environmentObject(VideoGameCollection())
     }
 }

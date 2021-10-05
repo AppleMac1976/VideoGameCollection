@@ -6,9 +6,19 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct Category{
+class Category: ObservableObject, Identifiable{
+    let id = UUID()
     var name: String
     var description: String
-    var icon: String
+    var icon: Image
+    var items: [Item]
+    
+    init(name: String, description: String, icon: Image, items: [Item]){
+        self.name = name
+        self.description = description
+        self.icon = icon
+        self.items = items
+    }
 }

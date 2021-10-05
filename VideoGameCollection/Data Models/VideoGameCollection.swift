@@ -7,12 +7,15 @@
 
 import Foundation
 import CloudKit
+import SwiftUI
 
 class VideoGameCollection: ObservableObject{
     @Published var gameCollection: [Game]
+    @Published var collection: [Category]
     
     init(){
         self.gameCollection = []
+        self.collection = [Category(name: "Games", description: "Video Game Collection", icon: Image(systemName: "gamecontroller"), items: [])]
     }
     
     static func loadiCloudGames()->VideoGameCollection{
