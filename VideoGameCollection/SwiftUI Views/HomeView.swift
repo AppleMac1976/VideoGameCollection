@@ -10,13 +10,12 @@ import SwiftUI
 struct HomeView: View {
     @EnvironmentObject var collection: VideoGameCollection
     var body: some View {
-        NavigationView{
-            VStack{
-                ForEach(collection.collection){ uniqueCategory in
-                    CategoryCellView(categoryName: uniqueCategory.name, icon: uniqueCategory.icon)
-                }
+        VStack{
+            ForEach(collection.collection){ uniqueCategory in
+                CategoryCellView(categoryName: uniqueCategory.name, icon: uniqueCategory.icon)
             }
         }
+        .navigationTitle("Home")
     }
 }
 

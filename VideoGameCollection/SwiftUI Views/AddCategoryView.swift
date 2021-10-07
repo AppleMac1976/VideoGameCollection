@@ -17,6 +17,7 @@ struct AddCategoryView: View {
             TextField("Category description", text: $categoryDescription)
                 .lineLimit(6)
         }
+        .navigationTitle("Add Category")
     }
 }
 
