@@ -15,10 +15,10 @@ struct CategoryCellView: View {
         NavigationLink(destination: CategoryItemsList()){
             VStack{
                 Text(categoryName)
-                    .font(.system(size: 30))
+                    .font(.system(size: 20))
                     .padding()
                 icon
-                    .font(.system(size: 50))
+                    .font(.system(size: 40))
             }
             .padding()
             .border(.black, width: 4)
