@@ -11,16 +11,19 @@ struct CategoryCellView: View {
     let categoryName: String
     let icon: Image
     var body: some View {
-        VStack{
-            Text(categoryName)
-                .font(.system(size: 30))
-                .padding()
-            icon
-                .font(.system(size: 50))
+        //temporary placeholder
+        NavigationLink(destination: CategoryItemsList()){
+            VStack{
+                Text(categoryName)
+                    .font(.system(size: 30))
+                    .padding()
+                icon
+                    .font(.system(size: 50))
+            }
+            .padding()
+            .border(.black, width: 4)
+            .shadow(radius: 5)
         }
-        .padding()
-        .border(.black, width: 4)
-        .shadow(radius: 5)
     }
 }
 
