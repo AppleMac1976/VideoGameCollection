@@ -11,20 +11,20 @@ class Category: ObservableObject, Identifiable, Equatable{
     let id = UUID()
     var name: String
     var description: String
-    var icon: String
+    var emoji: String
     var items: [Item]
     
-    init(name: String, description: String, icon: String, items: [Item]){
+    init(name: String, description: String, emoji: String, items: [Item]){
         self.name = name
         self.description = description
-        self.icon = icon
+        self.emoji = emoji
         self.items = items
     }
     
-    init(name: String, description: String, icon: String){
+    init(name: String, description: String, emoji: String){
         self.name = name
         self.description = description
-        self.icon = icon
+        self.emoji = emoji
         self.items = []
     }
     

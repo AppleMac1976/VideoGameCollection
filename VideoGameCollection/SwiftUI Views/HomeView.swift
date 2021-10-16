@@ -12,7 +12,7 @@ struct HomeView: View {
     var body: some View {
         VStack{
             ForEach(collection.collection){ uniqueCategory in
-                CategoryCellView(categoryName: uniqueCategory.name, emoji: "🎮")
+                CategoryCellView(categoryName: uniqueCategory.name, emoji: uniqueCategory.icon)
             }
         }
         .navigationTitle("Home")

@@ -10,7 +10,7 @@ import SwiftUI
 struct AddCategoryView: View {
     @State var viewModel: AddCategoryViewModel
     @EnvironmentObject var currentCollection: VideoGameCollection
-    //need a state property here for an image of some kind...but what type should it be??
+    
     var body: some View {
         VStack{
             Text("Category")
@@ -40,6 +40,9 @@ struct AddCategoryView: View {
         .navigationTitle("Add Category")
         .alert(isPresented: $viewModel.showAlert){
             Alert(title: Text(viewModel.alertTitle), message: Text(viewModel.alertMessage), dismissButton: Alert.Button.default(Text("OK")))
+        }
+        .onTapGesture {
+            UIApplication.shared.dismissKeyboard()
         }
     }
 }

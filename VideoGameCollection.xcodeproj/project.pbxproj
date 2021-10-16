@@ -16,6 +16,7 @@
 		6B224304269BE1A000937B15 /* GameResultRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B224303269BE1A000937B15 /* GameResultRow.swift */; };
 		6B23A90E26AE214C00C669A8 /* Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B23A90D26AE214C00C669A8 /* Scanner.swift */; };
 		6B486162271AB74E00D38804 /* EmojiKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B486161271AB74E00D38804 /* EmojiKeyboard.swift */; };
+		6B486164271AD07200D38804 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B486163271AD07200D38804 /* Keyboard.swift */; };
 		6B54184526C64F3900F3C900 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B54184426C64F3900F3C900 /* Store.swift */; };
 		6B5A39DE270ACA56005657D1 /* CategoryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A39DD270ACA56005657D1 /* CategoryCellView.swift */; };
 		6B5A39E0270ACA68005657D1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5A39DF270ACA68005657D1 /* Category.swift */; };
@@ -74,6 +75,7 @@
 		6B224303269BE1A000937B15 /* GameResultRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultRow.swift; sourceTree = "<group>"; };
 		6B23A90D26AE214C00C669A8 /* Scanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scanner.swift; sourceTree = "<group>"; };
 		6B486161271AB74E00D38804 /* EmojiKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiKeyboard.swift; sourceTree = "<group>"; };
+		6B486163271AD07200D38804 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		6B54184426C64F3900F3C900 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		6B5A39DD270ACA56005657D1 /* CategoryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellView.swift; sourceTree = "<group>"; };
 		6B5A39DF270ACA68005657D1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Category.swift; path = "VideoGameCollection/SwiftUI Views/Category.swift"; sourceTree = SOURCE_ROOT; };
@@ -167,6 +169,7 @@
 				6B9262E326ADE0C0005284D9 /* HexColor.swift */,
 				6B23A90D26AE214C00C669A8 /* Scanner.swift */,
 				6B486161271AB74E00D38804 /* EmojiKeyboard.swift */,
+				6B486163271AD07200D38804 /* Keyboard.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				6BAF08C8269560AC00F11357 /* VideoGameCollectionApp.swift in Sources */,
 				6BFA52DC269A471B00302FBE /* Platform.swift in Sources */,
 				6B5A39E0270ACA68005657D1 /* Category.swift in Sources */,
+				6B486164271AD07200D38804 /* Keyboard.swift in Sources */,
 				6B9262E426ADE0C0005284D9 /* HexColor.swift in Sources */,
 				6BED041126991E4F001E38CD /* AddGameView.swift in Sources */,
 				6B0A1D8426ACB28E00CEC04C /* SettingsView.swift in Sources */,
