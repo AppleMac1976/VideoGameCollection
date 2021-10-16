@@ -29,7 +29,7 @@ struct AddCategoryView: View {
                     .frame(width: 80, height: 80, alignment: .center)
             }
             Button{
-                let newCollection = viewModel.validateNewCategory(newCategory: Category(name: viewModel.categoryName, description: viewModel.categoryDescription, icon: viewModel.categoryEmoji), currentCollection: self.currentCollection)
+                let newCollection = viewModel.validateNewCategory(newCategory: Category(name: viewModel.categoryName, description: viewModel.categoryDescription, emoji: viewModel.categoryEmoji), currentCollection: self.currentCollection)
                 currentCollection.collection = newCollection.collection
                 viewModel.showAlert.toggle()
             }
