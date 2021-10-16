@@ -6,23 +6,22 @@
 //
 
 import Foundation
-import SwiftUI
 
 class Category: ObservableObject, Identifiable, Equatable{
     let id = UUID()
     var name: String
     var description: String
-    var icon: Image
+    var icon: String
     var items: [Item]
     
-    init(name: String, description: String, icon: Image, items: [Item]){
+    init(name: String, description: String, icon: String, items: [Item]){
         self.name = name
         self.description = description
         self.icon = icon
         self.items = items
     }
     
-    init(name: String, description: String, icon: Image){
+    init(name: String, description: String, icon: String){
         self.name = name
         self.description = description
         self.icon = icon

@@ -6,18 +6,25 @@
 //
 
 import Foundation
-import SwiftUI
 
-class AddCategoryViewModel{
-    @EnvironmentObject var currentCollection: VideoGameCollection
+struct AddCategoryViewModel{
+    var categoryName = String()
+    var categoryDescription = String()
+    var categoryEmoji = String()
+    var showAlert = false
+    var alertTitle = String()
+    var alertMessage = String()
     
-    func createCategory(newCategory: Category)->Bool{
+    mutating func validateNewCategory(newCategory: Category, currentCollection: VideoGameCollection)->VideoGameCollection{
         if (currentCollection.collection.contains{$0 == newCategory}){
-            return false
+            alertTitle = "Error"
+            alertMessage = "Category already exists, and cannot be duplicated"
         }
         else{
             currentCollection.collection.append(newCategory)
-            return true
+            alertTitle = "Success"
+            alertMessage = "Category added successfully"
         }
+        return currentCollection
     }
 }

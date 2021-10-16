@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CategoryCellView: View {
     let categoryName: String
-    let icon: Image
+    let emoji: String
     var body: some View {
         //temporary placeholder
         NavigationLink(destination: CategoryItemsList()){
@@ -17,7 +17,7 @@ struct CategoryCellView: View {
                 Text(categoryName)
                     .font(.system(size: 20))
                     .padding()
-                icon
+                Text(emoji)
                     .font(.system(size: 40))
             }
             .padding()
@@ -29,6 +29,6 @@ struct CategoryCellView: View {
 
 struct CategoryCellView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryCellView(categoryName: "Games", icon: Image(systemName: "gamecontroller"))
+        CategoryCellView(categoryName: "Games", emoji: "🎮")
     }
 }

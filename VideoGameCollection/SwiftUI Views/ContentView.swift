@@ -31,7 +31,7 @@ struct ContentView: View {
                 Text("Add")
             }
             NavigationView{
-                AddCategoryView()
+                AddCategoryView(viewModel: AddCategoryViewModel())
             }
             .tabItem{
                 Image(systemName: "book")

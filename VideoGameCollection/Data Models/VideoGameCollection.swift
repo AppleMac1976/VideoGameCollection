@@ -15,7 +15,7 @@ class VideoGameCollection: ObservableObject{
     
     init(){
         self.gameCollection = []
-        self.collection = [Category(name: "Games", description: "Video Game Collection", icon: Image(systemName: "gamecontroller"), items: [])]
+        self.collection = [Category(name: "Games", description: "Video Game Collection", icon: "🎮")]
     }
     
     static func loadiCloudGames()->VideoGameCollection{
